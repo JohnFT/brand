@@ -1,0 +1,29 @@
+body {
+    height: 100vh;
+    background-color: var(--black-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_content {
+    max-width: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.image_content img {
+    max-width: 100%;
+}
+
+p,
+h3 {
+    color: var(--white-color);
+    text-align: center;
+}
+
+a {
+    color: var(--gren-color);
+}

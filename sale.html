@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <title>Brand</title>
+</head>
+
+<body>
+    <nav class="fadeInDown">
+        <div class="brand_image">
+            <a href="/">
+                <img class="img_container" src="./assets/images/logo.webp" alt="logo">
+            </a>
+        </div>
+        <ul class="nav_options">
+            <li class="option">
+                <a href="#">Faqs</a>
+            </li>
+            <li class="option">
+
+                <a href="#"> Producto y description</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main_section main_form">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="module_pago">
+                        <div class="modulo_pago_images">
+                            <img src="./assets/images/box2.webp" alt="">
+                        </div>
+                        <h1>Producto 1</h1>
+                        <p>Miles productos hay en el mercado, pero nada como una caja con un gatito</p>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="module_pago">
+                        <form
+                            action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=V9NQGJXVRC9GA"
+                            method="POST">
+                            <label for="name">Name:</label>
+                            <input type="text" placeholder="Name" id="name" name="name">
+                            <label for="email">E-mail:</label>
+                            <input type="email" placeholder="Email" id="email" name="email">
+                            <label for="phone">Celphone:</label>
+                            <input type="phone" placeholder="Phone" id="phone" name="phone">
+                            <br>
+                            <button type="submit" class="main_button">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Terminos y condiciones
+        </p>
+        <p>
+            contacto@gmail.com
+        </p>
+    </footer>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

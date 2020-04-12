@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+/*--------- Variables */
+
+:root {
+    --gren-color: #7ACC2D;
+    --white-color: #ffffff;
+    --black-color: #313337;
+    /* Space */
+    --space: 10px;
+    /* Box Shadow */
+    --box: 0 0 2px #c1bcbc
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+    font-size: 12px;
+}
+
+nav {
+    background-color: var(--gren-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    padding-right: var(--space);
+}
+
+nav ul li a {
+    color: var(--black-color);
+    ;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--white-color);
+    ;
+}
+
+/* -------------- Main Section */
+
+
+.main_section {
+    padding: 8rem 1rem 16rem;
+    text-align: center;
+}
+
+.main_section h1 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.products {
+    background-image: url("../images/curve.webp");
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 350px;
+    flex-wrap: wrap;
+}
+
+.product {
+    padding: var(--space);
+    max-width: 250px;
+    margin-top: -150px;
+}
+
+.product .content {
+    background-color: var(--white-color);
+    padding: 15px;
+    box-shadow: var(--box);
+}
+
+.product .content h1 {
+    margin-bottom: var(--space);
+}
+
+
+.product .content p {
+    margin-bottom: var(--space);
+}
+
+.img_content {
+    text-align: center;
+}
+
+.main_button {
+    background-color: var(--gren-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: 17px;
+    color: var(--white-color);
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.main_button:hover {
+    background-color: #6bb328;
+}
+
+.services {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    max-width: 150px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.service p {
+    margin: var(--space) 0;
+}
+
+.service .img-content img {
+    max-width: 100%;
+}
+
+.mentions {
+    padding: 2rem;
+
+}
+
+.mentions h1 {
+    text-align: center;
+    padding: 2rem;
+}
+
+hr {
+    border-color: var(--black-color);
+    background-color: var(--black-color);
+}
+
+.mentions-wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.mention {
+    max-width: 200px;
+    box-sizing: border-box;
+    box-shadow: var(--box);
+}
+
+.mentions .content {
+    padding: .5rem 1rem;
+}
+
+.mention p {
+    margin: var(--space) 0;
+}
+
+.mention .img-content img {
+    max-width: 100%;
+}
+
+footer {
+    padding: 20px;
+    background-color: var(--black-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    color: var(--white-color);
+}
+
+
+/*---- Responsive */
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_section {
+        padding: 2rem;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+    }
+
+    .product {
+        height: auto;
+        margin: var(--space);
+    }
+
+    .mention {
+        margin: var(--space);
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/*------- Animations -*/
+
+.fadeIn {
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.fadeInDown {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+
+
+.fadeInUp {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
